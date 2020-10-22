@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" >
+  <span class="fill-remaining-space">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item routerLink="/books">
+        <mat-icon>queue</mat-icon>
+        <span>books</span>
+      </button>
+      <button mat-menu-item routerLink="/bill">
+        <mat-icon>people_outline</mat-icon>
+        <span>bill</span>
+      </button>
+      <button mat-menu-item routerLink="/invoice">
+        <mat-icon>queue</mat-icon>
+        <span>invoice</span>
+      </button>      
+    </mat-menu>
+    <button mat-icon-button (click)="test();">
+      <mat-icon>power_settings_new</mat-icon>Logout
+    </button>
+  </span>
+  <span class="fill-remaining-space">Books</span>
+</mat-toolbar>
